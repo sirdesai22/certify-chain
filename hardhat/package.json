@@ -2,6 +2,13 @@
   "name": "hardhat",
   "version": "1.0.0",
   "type": "module",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "node": "npx hardhat node",
+    "deploy:localhost": "npx hardhat run scripts/deploy.js --network localhost",
+    "export-abis": "node scripts/export-abis.js"
+  },
   "devDependencies": {
     "@nomicfoundation/hardhat-ignition": "^3.0.5",
     "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^3.0.1",
